@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <title>Empco-Lite</title>
+</head>
+<body>
+
+
+<!-- nav bar  -->
+    <nav>
+        <div class="logo">
+            <a  href="index.html">
+                <img class="img-responsive" src="/static/Empco-Lite-logo-07.png" alt="">
+                </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product_line.html">Product Line</a></li>
+            <li><a href="sister_companies.html">Divisions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div class="accordion">
+    <ul>
+        <li>
+            <div> <a href="{{ url_for('highway_construction_lighting') }}">
+                <h2>Highway Lighting</h2>
+                </a> </div>
+        </li>
+        <li>
+            <div> <a href="{{ url_for('marine_lighting') }}">
+                <h2>Marine Lighting</h2>
+                </a> </div>
+        </li>
+        
+        <li>
+        <div><a href="{{ url_for('airport_lighting') }}">
+            <h2>Airport Lighting</h2>
+            </a></div>
+        </li>
+        <li>
+        <div> <a href="{{ url_for('railroad_lighting') }}">
+            <h2>Railroad Lighting</h2>
+            </a> </div>
+        </li>
+
+
+        
+    </ul>
+</div>
+  
+
+
+<section class="about-us sec-padd">
+
+<!-- MISSION STATEMENT -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                
+                <div class="text pinside50">
+                    <h1 class="mission-title">Our Mission</h1>
+                    <p>The mission of Empco-Lite is to fully satisfy the expectations of our customers by 
+                    producing the highest quality products on time, each and everytime, 
+                    through the use of effective teamwork, employee involvement,
+                    and a dedication to excellence in everything we do with a view of continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- Our Products -->
+
+       <section class="grad-primary bg-boxshadow ">
+        <div class="container">
+            <div class="grid-background-none pinside50">
+
+                <div id=product-index-container>
+                    We Offer  
+                    <div id=flip>
+                    <div><div>Airport Lights</div></div>
+                    <div><div>Construction Lights</div></div>
+                    <div><div>Marine Lights</div></div>
+                    <div><div>Barge Lights</div></div>
+                    </div>
+                    And More!  
+
+                    <div><a href="{{ url_for('product_line') }}" class="btn-2">View Products</a></div>
+
+                </div>
+
+
+                
+                <div class="index-products">
+                    
+
+                    <div class="wrapper">
+                        <div class="box blury-card" >
+                            <img 
+                            src="/static/marine/load_light/LoadLight.jpg
+                            " alt="img">
+                            <div class="frame">
+                                <h2>High Quality</h2>
+                                <p>High Performance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text--center">
+                        </div>
+                    
+                    <div class="col-7 details">
+
+                        
+                    </div>
+                </div>
+                
+
+                </div>
+
+            
+        
+            <div class="container flex-row  mt80 ">
+                    <p class="pdr40"></p>
+                    <p class="pdr40">Barricade Lights</p>
+                    <p class="pdr40">Reflectors</p>
+                    <p class="pdr40">Mounting Brackets</p>
+                    <p class="pdr40">Mooring Lights</p>
+                    <p class="pdr40">LED Construction Lights</p>
+                    <p class="pdr40">Portable Construction Lights</p>
+                    <p class="pdr40">Blue Flag Lights</p>
+                    <p class="pdr40">Solar Airport Lights</p>
+                    <p class="pdr40">Barge Lights</p>
+                    <p class="pdr40">ADA Devices</p>
+            </div>
+        </div>
+    </section>
+
+
+                <!-- WOMAN-OWNED Business -->
+  <section class="section--dark text--center pinside80">
+    <div class="about-container">
+        <div>
+            <h1>Proud to be a Woman-Owned Business!</h1>
+            <img  class="" src="/static/woman-icons-03.png" height="20%" width="20%">
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- FEATURED PRODUCT  -->
+
+    <div class="grid">
+
+        <section class=" grad-neutral pinside50">
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+            <div class="slide">
+                <img src="/static/highway/S_solar212-3/Model212-3SSolarAssist1.jpg" />
+                </div>
+            <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+            </li>
+    
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/static/highway/S_solar212-3/Model212-3SSolarAssist2.jpg" />
+                </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+            </li>
+    
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/static/highway/S_solar212-3/Model212-3SSolarAssist3.jpg" />
+                </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+            </li>
+    
+        </section>
+
+
+    
+        <section class="grad-neutral pinside50">
+        <div class="container mt0">
+            <h1 class="product-description">Featured Product</h1>
+            <h1 class="mb30">Model 212-3S Solar Assist</h1>
+            <img class="mr100" id="nav-logo" src="/static/made-in-usa-stamp.png" height="50%" width="50%">
+            <a href="{{ url_for('model212_3_S_solar_assist') }}" class="btn btn-outline mt20">View Product</a> 
+        </div>
+        
+        
+            
+            <ul class="mt100 pdr80">
+                <li>Internal solar panels trickle charge D-cell Alkaline batteries
+                    to give a superior long lasting more reliable power source.</li>
+                <li>Battery life: 19-20 months on 4 alkaline D-cell batteries.</li>
+                <li>Yellow base is standard, other colors available upon
+                    request.</li>
+        
+            </ul>
+        </div>
+        </section>
+  </div>
+
+
+
+      <!-- SPONSORSHIPS -->
+
+      <section class="text--center">
+        <div class="about-container pinside50">
+         <div class="grid ">
+            <div class="flex-row">
+                <h2 class="medium-title">Our Commitment</h2>
+                <h2 class="capital-title pinside50 product-line-container">To Safety on the Roads</h2>
+            </div>
+            <p class="pinside50">Empco-Lite is honored to be recognized as an industry leader in Safelty, Innovation, and Leadership. We are proud members of National Highway Safety Administration, American Traffic Safety Services Association, Flasher Barricade Association, and the Transportation Safety Equipment Institute.  </p>
+
+
+        </div>
+
+        <div class="grid-4 ">
+            <img src="/static/memberships/memberships-03.png" height="100%" width="100%">
+            <img src="/static/memberships/memberships-04.png" height="100%" width="100%">
+            <img src="/static/memberships/memberships2-01.png" height="100%" width="100%">
+            <img src="/static/memberships/memberships2-02.png" height="100%" width="100%">
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="big-image-quality">
+        <div class="overlay-product-line">
+            <div class="product-line-container">
+                <h1 class="uppercase">Quality with Integrity</h1>
+                <a href="process.html" class="btn-3">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    
+
+<!-- Footer -->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>909 Grace Street,</span>
+                                <p>Elgin, IL 60120-8419</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>847-931-2455</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>sales@empco-lite.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo mt-40 mb60">
+                                <a href="index.html"><img src="/static/Empco-Lite-logo-07.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text mt-40">
+                                <p>Our goal is to provide the highest quality lighting and complementary products at competitive prices, always keeping the customer in mind. </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="https://www.aktinc.com/">AKT Corporation</a></li>
+                                <li><a href="airport_lighting.html">Airport Lighting</a></li>
+                                <li><a href="https://elginmolded.com/">Elgin Molded Plastics</a></li>
+                                <li><a href="highway_construction_lighting.html">Construction Lighting</a></li>
+                                <li><a href="https://www.linkedin.com/company/empco-lite/">Linkedin</a></li>
+                                <li><a href="marine_lighting.html">Marine Lighting</a></li>
+                                <li><a href="https://www.facebook.com/Empco-Lite-103848039076966 ">Facebook</a></li>
+                                <li><a href="railroad_lighting.html">Railroad Lighting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Get a Quote</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Providing services since the 1960's. Trust our expert sales team to provide to solutions you need.</p>
+                            </div>
+                                <div class="subscribe-form">
+                                    <a href="contact.html"><i class="fab fa-telegram-plane"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Website Design & Branding <a href="http://www.vernonwebdesigns.com/">Vernon Web Designs</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                <li><a href="termsofuse.html">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Script tag -->
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+  
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+

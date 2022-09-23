@@ -192,12 +192,13 @@ a {
       position: absolute;
       left: 0;
       top: 75px;
-      background: $backgroundcolor; 
+      background: inherit; 
   }
 
   .drop-down-menu-active {
       border-radius: 0;
   }
+}
 
 
 
@@ -367,7 +368,8 @@ footer ul {
   margin: 0;
   font-size: 14px;
   color: #878787;
-  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 10px; 
 }
 .copyright-text p a{
   color: #F29F05;
@@ -399,6 +401,7 @@ footer a {
 /* 1.  */
 /* HERO IMAGE  */
 /* Lighting Types: AIRPORT , HIGHWAY, MARINE, RAILROAD  */
+
 
 
 .accordion {
@@ -515,6 +518,28 @@ footer a {
     color: black; 
   }
 
+  @media (max-width: 900px){
+    .accordion ul li:nth-child(2){
+      background-image: none;
+      display: none; 
+    }
+  }
+
+  @media (max-width: 900px){
+    .accordion ul li:nth-child(3){
+      background-image: none;
+      display: none; 
+    }
+  }
+
+  @media (max-width: 900px){
+    .accordion ul li:nth-child(4){
+      background-image: none;
+      display: none;
+    }
+  }
+
+
 
 
 
@@ -567,13 +592,7 @@ footer a {
     max-width: 80rem;
   }
 
-  @media (max-width: 800px) {
-    .hidden{
-      display:none; 
-      visibility: hidden
-    }
 
-  }
   
   .product-line .cols{
     display: -webkit-box;
@@ -895,7 +914,6 @@ footer a {
 
 .oldworld-container{
   background-color: #f2cb05;
-
   padding: 50px; 
 }
 
@@ -1217,11 +1235,7 @@ footer a {
     }
   }
 
-  @media (max-width: 800px) {
-    .small-container{
-      max-width: 400px; 
-    }
-  }
+
 
 
   @media (max-width: 900px) {
@@ -1486,6 +1500,8 @@ footer a {
       background: rgb(255,255,255);
       background: radial-gradient(circle, rgba(255,255,255,0.8982186624649859) 0%, rgba(242,231,75,1) 80%); 
     }
+
+    
     .grad-neutral{
       background: rgb(255,255,255);
       background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(198,196,192,0.8085828081232493) 100%);
@@ -1967,7 +1983,7 @@ blockquote cite:before {
 
 
 .btn {
-    min-width: 200px;
+    min-width: 150px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -2061,16 +2077,8 @@ blockquote cite:before {
     margin-bottom: 2rem;
   }
   
-  @media screen and (min-width: 768px) {
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .col-50 {
-      flex-basis: 50%;
-    }
-  }
+
+
   
   /*remove block and see change at bottom*/
   #process img {
@@ -2187,12 +2195,11 @@ blockquote cite:before {
     cursor: pointer;
 
     transition: opacity .2s;
-
     color: #FFF;
     font-size: 156pt;
     text-align: center;
     line-height: 380px;
-    font-family: "Varela Round", sans-serif;
+    font-family: "PT sans", sans-serif;
     background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
@@ -3148,13 +3155,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   font-size:36px;
   font-weight:bold;
  
-  display:block;
 }
 
 #flip {
   height:80px;
   overflow:hidden;
 }
+
+
+
 
 
 

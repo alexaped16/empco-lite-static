@@ -58,7 +58,7 @@ h5 {font-size: 1.2rem;}
 small, .text_small {font-size: 0.833rem;}
 
 
-
+body{ width:100%; overflow-x: hidden;}
 
 
   
@@ -830,8 +830,8 @@ footer a {
 }
 
 .product-line-container{
-  background-color: #f2cb05;
-  padding: 50px;
+  background-color: #f2cb05c5;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(236, 116, 10, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
@@ -919,15 +919,14 @@ footer a {
 
 .overlay-oldworld{
   position: absolute;
-  height: 80%;
-  width: 70%;
-  top: 200px;
-  right: 100px;
+  height: 100%;
+  width: 100%; 
+  background-color: rgba(34, 34, 34, 0.331);
   color:white; 
   display: flex;
-  align-items:flex-end;
-  justify-content:left;
-  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  flex-direction: row;
 }
 
 .overlay-oldworld h1 {

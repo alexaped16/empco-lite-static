@@ -1,5 +1,58 @@
-/* toggle hamburger */
-
+function sendEmail() {
+    const name = document.getElementById('txtName').value;
+    const email = document.getElementById('txtEmail').value;
+    const phone = document.getElementById('txtPhone').value;
+    const company = document.getElementById('txtCompany').value;
+    const product = document.getElementById('txtProduct').value;
+    const message = document.getElementById('txtMessage').value;
+  
+    const emailBody = `
+      <h2>Contact Form submitted from Empco-Lite</h2>
+      <div>Name: <strong>${name}</strong></div>
+      <div>Email: <strong>${email}</strong></div>
+      <div>Phone: <strong>${phone}</strong></div>
+      <div>Company: <strong>${company}</strong></div>
+      <div>Product: <strong>${product}</strong></div>
+      <div>Message: <strong>${message}</strong></div>
+    `;
+  
+    const payload = {
+      Body: emailBody,
+      ToEmails: 'sales@empco-lite.com',
+      Subject: 'Empco-Lite Contact Form',
+      FromName: 'Empco-Lite',
+      FromEmail: 'alexa.pedersen@alexapedersen.com'
+    };
+  
+    fetch('https://gn02-email-test.azurewebsites.net/api/SendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+      .then(response => {
+        if (response.ok) {
+          // Display success message here
+          document.getElementById('formMessage').textContent = 'Your form has been successfully sent!';
+          document.getElementById('formMessage').classList.add('success');
+          console.log('Email sent successfully!');
+        } else {
+          console.error(response);
+          throw new Error('Failed to send email.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error.message);
+      });
+  }
+  
+  
+  
+  
+  
+  
+ /* toggle hamburger */
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".nav-menu");
 
@@ -20,7 +73,6 @@ function toggleNavMenu() {
 toggle.addEventListener("click", toggleNavMenu, false);
 
 /* drop down menu */
-
 const items = document.querySelectorAll(".item");
 
 function toggleItem() {
@@ -28,14 +80,9 @@ function toggleItem() {
         this.classList.remove("drop-down-menu-active");
     } else {
         this.classList.add("drop-down-menu-active");
-    }
-}
 
-/* drop down event listen */
-for (let item of items) {
-    if (item.querySelector(".drop-down-menu")) {
-        item.addEventListener("click", toggleItem, false);
-        item.addEventListener("keypress", toggleItem, false);
+        // Add this line to open the modal when a dropdown item is clicked
+        $('#myModal').modal('show');
     }
 }
 
@@ -48,7 +95,7 @@ for (let item of items) {
 }
 
 /* close drop down from clicking anywhere */
-function closeDropDown (event) {
+function closeDropDown(event) {
     let isClickInside = menu.contains(event.target);
 
     if (!isClickInside && menu.querySelector(".drop-down-menu-active")) {
@@ -58,3 +105,33 @@ function closeDropDown (event) {
 
 /* Listener */
 document.addEventListener("click", closeDropDown, false);
+
+
+
+
+// Check if the modal should be displayed
+function shouldDisplayModal() {
+  return document.cookie.indexOf('modalDisplayed=true') === -1;
+}
+
+// Show the modal
+function showModal() {
+  $('#myModal').modal('show');
+}
+
+// Set a cookie to remember that the modal has been displayed
+function setModalDisplayedCookie() {
+  document.cookie = 'modalDisplayed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+}
+
+// Event listener for closing the modal
+$('#myModal').on('hidden.bs.modal', function () {
+  setModalDisplayedCookie();
+});
+
+// Event listener for showing the modal (delayed to ensure it shows after the page loads)
+$(document).ready(function() {
+  if (shouldDisplayModal()) {
+    showModal();
+  }
+});

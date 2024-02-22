@@ -26,7 +26,7 @@ input, select { vertical-align:middle; }
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: white; 
+  background: rgb(255, 255, 255); 
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -81,6 +81,10 @@ a {
 .drop-down-menu {
   list-style-type: none;
   color: #FDF8F2; 
+}
+
+.nav-menu img{
+  max-width: 600px; 
 }
 
 .item {
@@ -267,7 +271,7 @@ footer ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #7e7e7e;
   line-height: 28px;
   margin-right: 10px;
   font-family: 'open sans', sans-serif; 
@@ -1462,8 +1466,6 @@ footer a {
     .big-title { font-size: 4rem; font-weight: 600; color: white; }
     .little-title { font-size: 2rem; font-weight: 600; color: white; }
     .capital-title { text-transform: uppercase; font-size: 36px; font-weight: 600; color: black; }
-    .bdr-btm { }
-    .green-text { }
     .bg-boxshadow { -webkit-box-shadow: 0px 4px 16px 3px rgba(230, 216, 136, 0.5); -moz-box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); }
     
     
